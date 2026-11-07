@@ -8,9 +8,9 @@ def grade_validator(grade):
     else:
         return f"Grade can't be {grade} or higher."
 
-try:
-    user_grade = int(input("Enter your grade: "))
-    result = grade_validator(user_grade)
-    print(result)
-except ValueError:
-    print("Invalid input.")
+# try:
+#     user_grade = int(input("Enter your grade: "))
+#     result = grade_validator(user_grade)
+#     print(result)
+# except ValueError:
+#     print("Invalid input.")

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <title>Grade Validation</title>
 </head>
 <body>
@@ -11,8 +11,9 @@
         <label for="">Grade</label>
         <input type="number" class="grade_box" id="grade">
         <button id="validationButton">Validate</button>
+        <h2 id="message"></h2>
     </div>
 
-    <script src="script.js"></script>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
 </body>
 </html>

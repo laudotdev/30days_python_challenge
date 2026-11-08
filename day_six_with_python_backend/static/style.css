@@ -1,0 +1,56 @@
+body {
+    color: white;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.content {
+    background-color: rgb(105, 185, 255);
+    color: black;
+    /* max-width: calc(100vw - 32px); */
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+}
+
+label {
+    padding: 12px;
+    display: block;
+}
+
+input {
+    /* margin-left: 12px; */
+    padding-left: 8px;
+    /* width:100%;
+    max-width: 28vw;
+    box-sizing: border-box; */
+    margin-inline: auto;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+}
+
+input::active {
+    border-color: transparent;
+}
+
+#submitButton {
+    margin-top: 12px;
+    width: 20vw;
+    margin-left: 19%;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+
+#submitButton:hover {
+    background-color: red;
+}

@@ -33,6 +33,11 @@ validationButton.addEventListener("click", function() {
         message.textContent = "Something went wrong.";
     });
 
+    if(grade >= 75 && grade <= 100) {
+        message.style.color = "green";
+        return;
+    }
+
 });
 
 // fetch("/api/message")

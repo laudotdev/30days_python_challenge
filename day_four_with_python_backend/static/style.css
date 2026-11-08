@@ -1,17 +1,18 @@
 body {
     color: black;
     background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
 }
 
 .input_field {
     display: block;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40%;
-    background-color: blue;
+    background-color: wheat;
     height: 150px;
     width: 300px;
-    margin-left: 300px;
     border-radius: 30px;
     padding-left: 20px;
 }
@@ -40,5 +41,11 @@ label {
     border-radius: 10px;
     color: white;
     cursor: pointer;
+    font-weight: bold;
+}
+
+#message {
+    font-size: 13px;
+    color: red;
     font-weight: bold;
 }

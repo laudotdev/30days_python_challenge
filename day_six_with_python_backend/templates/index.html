@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename="style.css")}}">
     <title>Student Score Analyzer</title>
 </head>
 <body>
     <div class="content">
-        <form action="submit">
-            <label for="Name">Name</label>
-            <input type="text" id="name" class="name">
-            <label for="Score">Score</label>
-            <input type="number" name="score" id="score">
-            <input type="submit" value="Calculate" id="submitButton">
-        </form>
+        <label for="Name">Name</label>
+        <input type="text" id="name" class="name">
+        <label for="Score">Score</label>
+        <input type="number" name="score" id="score">
+        <button id="submitButton">Calculate</button>
+
+        <p id="message"></p>
     </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
 </body>
 </html>

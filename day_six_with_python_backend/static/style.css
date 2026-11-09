@@ -9,10 +9,10 @@ body {
 }
 
 .content {
-    background-color: rgb(105, 185, 255);
+    background-color: rgb(232, 255, 231);
     color: black;
-    /* max-width: calc(100vw - 32px); */
-    height: auto;
+    max-width: 350px;
+    height: 220px;
     width: auto;
     border-radius: 20px;
 }
@@ -20,28 +20,25 @@ body {
 label {
     padding: 12px;
     display: block;
+    height: 12px;
 }
 
 input {
-    /* margin-left: 12px; */
+    margin-left: 12px;
     padding-left: 8px;
-    /* width:100%;
-    max-width: 28vw;
-    box-sizing: border-box; */
-    margin-inline: auto;
+    width: 89%;
     border-radius: 5px;
     border: none;
     height: 25px;
-}
-
-input::active {
-    border-color: transparent;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 #submitButton {
     margin-top: 12px;
-    width: 20vw;
-    margin-left: 19%;
+    width: 89%;
+    margin-left: 13px;
     height: 30px;
     border-radius: 20px;
     color: white;
@@ -53,4 +50,11 @@ input::active {
 
 #submitButton:hover {
     background-color: red;
+}
+
+#message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
 }

@@ -1,0 +1,44 @@
+const name = document.getElementById('name');
+const score = document.getElementById('score');
+const submitButton = document.getElementById('submitButton');
+const message = document.getElementById('message');
+
+submitButton.addEventListener('click', function() {
+    const scoreVal = score.value;
+
+    if(scoreVal.trim() == "") {
+        message.style.color = 'red';
+        message.textContent = "Please enter your score";
+        return;
+    }
+
+    fetch("/api/logic", {
+        method: 'POST',
+
+        headers: {
+            "Content-Type": "application/json"
+        },
+
+        body: JSON.stringify({
+            score: scoreVal
+        })
+    })
+
+    .then(response => response.json())
+    .then(data => {
+        message.textContent = data.result;
+    })
+
+    .catch(error => {
+        console.error("Error: ", error)
+        message.textContent = "Something went wrong."
+    })
+
+    if(scoreVal >= 0 && scoreVal <= 100) {
+        message.style.color = "green";
+    }
+    else {
+        message.style.color = "red";
+    }
+
+})

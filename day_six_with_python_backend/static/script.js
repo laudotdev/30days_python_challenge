@@ -1,10 +1,12 @@
-const name = document.getElementById('name');
+const nameUser = document.getElementById('name')
 const score = document.getElementById('score');
 const submitButton = document.getElementById('submitButton');
 const message = document.getElementById('message');
 
 submitButton.addEventListener('click', function() {
+    
     const scoreVal = score.value;
+    const nameVal = nameUser.value;
 
     if(scoreVal.trim() == "") {
         message.style.color = 'red';
@@ -20,13 +22,20 @@ submitButton.addEventListener('click', function() {
         },
 
         body: JSON.stringify({
-            score: scoreVal
+            score: scoreVal,
+            name: nameVal
         })
     })
 
     .then(response => response.json())
     .then(data => {
-        message.textContent = data.result;
+        message.textContent = data.result_name;
+        if(scoreVal >= 0 && scoreVal <= 100) {
+            message.style.color = "green";
+        }
+        else {
+            message.style.color = "red";
+        }
     })
 
     .catch(error => {
@@ -34,11 +43,6 @@ submitButton.addEventListener('click', function() {
         message.textContent = "Something went wrong."
     })
 
-    if(scoreVal >= 0 && scoreVal <= 100) {
-        message.style.color = "green";
-    }
-    else {
-        message.style.color = "red";
-    }
+
 
 })

@@ -11,9 +11,9 @@ def score(score):
 
 def name(name):
     if is_valid:
-        return f"Congrats {name} Valid score!"
+        return f"Congrats {name} you've got Valid score!"
     else:
-        return f"{name} has Invalid score"
+        return f"{name} got Invalid score."
 
 print(score(90), name("lau"))
 print(score(-1), name("rence"))

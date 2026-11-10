@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from logic import name, score
+from logic import score,name
 
 app = Flask(__name__)
 
@@ -12,13 +12,15 @@ def logics():
     data = request.get_json()
 
     score_py = int(data['score'])
-    result = score(score_py)
-
+    name_py = str(data['name'])
+    result_score = score(score_py)
+    result_name = name(name_py)
+    
     return jsonify({
-        "score": score_py,
-        "result": result
+        "name": name_py,
+        "result_score": result_score,
+        "result_name": result_name
     })
-
 
 if __name__ == "__main__":
     app.run(debug=True)

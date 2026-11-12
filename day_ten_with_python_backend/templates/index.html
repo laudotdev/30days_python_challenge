@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename="style.css")}}">
+    <title>Validation Form</title>
+</head>
+<body>
+    <div class="form">
+        <input type="text" name="" id="fullname" class="fullname" placeholder="Enter your Full Name">
+        <input type="text" name="" id="email" class="email" placeholder="Enter your Email">
+        <input type="text" name="" id="subject" class="subject" placeholder="Subject">
+        <input type="text" name="" id="message" class="message" placeholder="Message">
+        <button class="submit" id="submitButton">Submit</button>
+        <p id="results"></p>
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>

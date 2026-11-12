@@ -8,9 +8,14 @@ submitButton.addEventListener('click', function() {
     const scoreVal = score.value;
     const nameVal = nameUser.value;
 
-    if(scoreVal.trim() == "") {
+    if(scoreVal.trim() === "") {
         message.style.color = 'red';
         message.textContent = "Please enter your score";
+        return;
+    }
+    if(nameVal.trim() === "") {
+        message.style.color = "red";
+        message.textContent = "Please enter your name";
         return;
     }
 

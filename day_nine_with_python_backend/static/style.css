@@ -47,3 +47,9 @@ button {
     font-size: 18px;
     font-weight: bold;
 }
+
+#answer {
+    text-align: center;
+    color: green;
+    font-size: 30px;
+}

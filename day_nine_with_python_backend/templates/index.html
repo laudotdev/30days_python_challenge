@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="{{url_for('static', filename="style.css")}}"> -->
-     <link rel="stylesheet" href="/static/style.css">
+     <link rel="stylesheet" href="{{url_for('static', filename="style.css")}}">
     <title>CALCULATOR</title>
 </head>
 <body>
@@ -14,8 +14,11 @@
         <input type="number" name="number" id="numberTwo" placeholder="Enter second number">
         <button id="addButton">+</button>
         <button id="subtractButton">-</button>
-        <button id="multiplyButton">*</button>
-        <button id="divideButton">/</button>
+        <button id="multiplyButton">x</button>
+        <button id="divideButton">÷</button>
+
+        <p id="answer"></p>
     </div>
+    <script src="{{url_for('static', filename="script.js")}}"></script>
 </body>
 </html>

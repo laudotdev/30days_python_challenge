@@ -35,7 +35,5 @@ calculateButton.addEventListener('click', function() {
         message.style.fontSize = "12px";
         message.style.color = "red";
         message.textContent = `${error}`;
-
-
     })
 })

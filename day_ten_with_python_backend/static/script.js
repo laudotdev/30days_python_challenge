@@ -12,7 +12,7 @@ submitButton.addEventListener('click', function() {
     let fullnameVal = fullname.value;
     let emailVal = email.value;
     let subjectVal = subject.value;
-    let messageVal = subject.value;
+    let messageVal = message.value;
 
 
     // send a request to the backend
@@ -34,12 +34,20 @@ submitButton.addEventListener('click', function() {
     // display the result from the backend
     .then(response => response.json())
     .then(data => {
-        results.textContent = data.result
+        console.log(data.result)
+
+        if(data.result["is_success"] === true) {
+            results.style.color = "green";
+            results.textContent = "Form submitted successfully!";
+        }
+        else {
+            results.style.color = "red";
+            results.textContent = data.result.errors["full_name"] || data.result.errors["email"] || data.result.errors["subject"] || data.result.errors["message"];
+        }
     })
 
     .catch(error => {
         console.error("Error: ", error)
-        results.textContent = `${error}`
     })
 
 })

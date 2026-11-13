@@ -13,10 +13,10 @@ def validate_form():
 
     full_name_server = str(data['full_name'])
     email_server = str(data['email'])
-    subject_server = str(['subject'])
+    subject_server = str(data['subject'])
     message_server = str(data['message'])
 
-    result = validator(full_name_server, email_server, subject_server, message_server)
+    result = validator(full_name_server, email_server, subject_server, message_server, is_success=True)
 
     return jsonify({
         "result": result

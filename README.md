@@ -44,6 +44,7 @@ The goal is to strengthen my programming fundamentals, understand backend develo
 | Day 8 | Addition API | Frontend-backend communication |
 | Day 9 | Simple Calculator | API integration, POST requests |
 | Day 10 | Mini Contact Form API | Form handling, backend validation |
+| Day 11 | Login Validation | Returning tuples and simple backend validation
 
 ## Learning Approach
 

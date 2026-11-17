@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static', filename="style.css")}}">
+  <title></title>
+</head>
+<body>
+    <div class="content">
+        <input type="text" class="string_convert" placeholder="Enter anything" id="stringConvert">
+        <button id="convert">Convert into Binary</button>
+
+        <input type="text" class="binary_convert" placeholder="Enter a Binary to convert" id="binaryConvert">
+        <button id="binaryConvertBtn">Stringify</button>
+        
+        <p id="resultConverted"></p>
+    </div>
+    <script src={{url_for('static', filename="script.js")}}></script>
+</body>
+</html>

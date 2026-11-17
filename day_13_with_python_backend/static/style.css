@@ -1,0 +1,46 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: wheat;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.content {
+    height: 400px;
+    width: 300px;
+    background-color: red;
+    display: block;
+    border-radius: 10px;
+}
+
+input {
+    margin: 20px 22px 20px 22px;
+    padding-left: 8px; 
+    width: 82%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: sky-blue;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+
+#convert {
+    margin-left: 19%;
+}
+
+#binaryConvertBtn {
+    margin-left: 31%;
+}

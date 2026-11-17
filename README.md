@@ -46,6 +46,7 @@ The goal is to strengthen my programming fundamentals, understand backend develo
 | Day 10 | Mini Contact Form API | Form handling, backend validation |
 | Day 11 | Login Validation | Returning tuples and simple backend validation
 | Day 12 | Login Digital Detective | Investigates suspicious activity based on user activity logs
+| Day 13 | Binary Conversion and Binary-to-String Convertion | Converts human language into a machine language, machine language to human readable language
 
 ## Learning Approach
 

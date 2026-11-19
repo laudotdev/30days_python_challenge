@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static', filename="style.css")}}">
+  <title></title>
+</head>
+<body>
+    <div class="content">
+        <h1>EncryptO</h1>
+        <input type="text" class="encrypt" placeholder="Enter a word to encrypt">
+        <button id="encryptBtn">Encrypt</button>
+        <button id="cpEncButton">Copy</button>
+        <input type="text" class="decrypt" placeholder="Enter an encrypted word">
+        <button id="decryptBtn">Decrypt</button>
+        <button id="cpDecButton">Copy</button>
+        <p id="resultMessage"></p>
+    </div>
+    <script src="{{url_for('static', filename="script.js")}}"></script>
+</body>
+</html>

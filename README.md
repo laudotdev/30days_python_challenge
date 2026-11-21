@@ -47,7 +47,8 @@ The goal is to strengthen my programming fundamentals, understand backend develo
 | Day 11 | Login Validation | Returning tuples and simple backend validation
 | Day 12 | Login Digital Detective | Investigates suspicious activity based on user activity logs
 | Day 13 | Binary Conversion and Binary-to-String Convertion | Converts human language into a machine language, machine language to human readable language
-| Day 14 | Encryption and Decryption | String Encrypting and Decrypting, with fixec value (each run only), using package `cryptography`
+| Day 14 | Encryption and Decryption | String Encrypting and Decrypting, with fixed value (each run only), using package `cryptography`
+| Day 15 | File Handling with backend | Update, write and delete a file, will create the default folder `Day15Folder-file-handling_flask` and the default txt file `day_15_file.txt`
 
 ## Learning Approach
 

@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: red;
+    font-family: "Segoe-UI", Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: "Segoe-UI", Arial, sans-serif;
+}
+
+.content {
+    display: block;
+    background-color: pink;
+    height: 430px;
+    width: 400px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+input {
+    width: 97%;
+    height: 35px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.inputHidden {
+    display: none;
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    margin-left: 32px;
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    max-width: 100%;
+    color: green;
+    font-weight: bold;
+}
+
+#submitBtn {
+    margin-left: 30%;
+    display: none;
+}
+
+#deleteFile {
+    margin-left: 30%;
+}

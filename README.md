@@ -49,6 +49,7 @@ The goal is to strengthen my programming fundamentals, understand backend develo
 | Day 13 | Binary Conversion and Binary-to-String Convertion | Converts human language into a machine language, machine language to human readable language
 | Day 14 | Encryption and Decryption | String Encrypting and Decrypting, with fixed value (each run only), using package `cryptography`
 | Day 15 | File Handling with backend | Update, write and delete a file, will create the default folder `Day15Folder-file-handling_flask` and the default txt file `day_15_file.txt`
+| Day 16 | Weather Update with API | Enter a location then return a weather result for the specific location `Iba`
 
 ## Learning Approach
 
